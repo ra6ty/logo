@@ -1,0 +1,26 @@
+* {
+  font-family: 'Gothic A1', sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 10rem;
+  & p {
+    font-size: 25px;
+    font-weight: 400;
+    color: #4c4c4c;
+  }
+  & div {
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    & a {
+      text-decoration: none;
+      font-size: 12px;
+      line-height: 50px;
+      color: #a7a7a7;
+    }
+  }
+}

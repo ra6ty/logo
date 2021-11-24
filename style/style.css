@@ -1,1 +1,39 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+* {
+  font-family: 'Gothic A1', sans-serif;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem 10rem;
+}
+
+header p {
+  font-size: 25px;
+  font-weight: 400;
+  color: #4c4c4c;
+}
+
+header div {
+  width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header div a {
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 50px;
+  color: #a7a7a7;
+}
+/*# sourceMappingURL=style.css.map */
