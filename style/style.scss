@@ -1,5 +1,6 @@
+@import "mixins";
 * {
-  font-family: 'Gothic A1', sans-serif;
+  font-family: "Gothic A1", sans-serif;
 }
 
 header {
@@ -19,8 +20,208 @@ header {
     & a {
       text-decoration: none;
       font-size: 12px;
-      line-height: 50px;
       color: #a7a7a7;
+    }
+  }
+}
+
+main {
+  width: 100%;
+  & .first-box {
+    background-image: url(../images/1.png);
+    @include backgroundImage;
+    padding: 7rem;
+    & h1 {
+      font-size: 40px;
+      font-weight: 900;
+      text-transform: uppercase;
+      color: #303030;
+      max-width: 400px;
+      text-align: center;
+      margin: 8rem auto 1rem auto;
+    }
+    & p {
+      @include text;
+      font-style: italic;
+      font-family: "Georgia", Times, serif;
+      margin-bottom: 5rem;
+    }
+    &-container {
+      margin: auto;
+      width: 80px;
+      height: 80px;
+      background-image: url(../images/1.2.png);
+      @include backgroundImage;
+      display: flex;
+      & svg {
+        margin: auto;
+      }
+      & svg :hover {
+        fill: #87cefa;
+      }
+    }
+  }
+  & .second-box {
+    padding: 2rem;
+    & h2 {
+      @include h2;
+      margin: 1rem;
+    }
+    & hr {
+      @include line;
+      max-width: 240px;
+    }
+    & p {
+      @include text;
+      max-width: 600px;
+      margin: 1rem auto 0rem auto;
+    }
+    &-container {
+      &--part {
+        display: flex;
+        justify-content: center;
+        & img {
+          margin: 1.8rem;
+        }
+      }
+    }
+  }
+  & .third-box {
+    padding: 2rem 2rem 4rem 2rem;
+    background-color: #f3f3f3;
+    & h2 {
+      @include h2;
+      margin: 1rem;
+    }
+    & hr {
+      @include line;
+      max-width: 180px;
+    }
+    & p {
+      @include text;
+      max-width: 600px;
+      margin: 2rem auto 3rem auto;
+    }
+    & .box {
+      display: flex;
+      justify-content: center;
+      &--container {
+        background-color: #ffffff;
+        padding: 2rem;
+        margin: 1rem;
+        & img {
+          display: block;
+          margin: auto;
+        }
+        & h3 {
+          font-size: 16px;
+          font-weight: 900;
+          text-transform: uppercase;
+          color: #303030;
+          text-align: center;
+          margin: 1rem auto 0rem auto;
+        }
+        & p {
+          font-family: "Georgia", Times, serif;
+          font-size: 12px;
+          font-weight: 400;
+          font-style: italic;
+          color: #303030;
+          margin: auto;
+        }
+        & div {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          & a {
+            margin: 1rem 1rem 0.3rem 1rem;
+          }
+        }
+      }
+    }
+  }
+  & .fourth-box {
+    padding: 2rem 2rem 4rem 2rem;
+    & h2 {
+      @include h2;
+      margin: 1rem;
+    }
+    & hr {
+      @include line;
+      max-width: 180px;
+    }
+    & .box {
+      display: flex;
+      justify-content: center;
+      padding: 1rem;
+      &--left-container {
+        margin: 0rem 2rem;
+        & p {
+          padding: 1rem 0rem 1rem 0.5rem;
+          @include text;
+          text-align: start;
+        }
+        & img {
+          width: 320px;
+          height: 315px;
+        }
+      }
+      &--rigth-container {
+        & p {
+          @include text;
+          text-align: start;
+          padding: 1rem 0rem 1.5rem 0rem;
+        }
+        & form {
+          & textarea {
+            font-family: "Georgia", Times, serif;
+            font-size: 16px;
+            font-style: italic;
+            color: #5f5f5f;
+            background-color: #f2f2f2;
+            padding: 1rem;
+            border: none;
+            border: 1px solid rgba(0, 0, 0, 0.14);
+          }
+          textarea:focus {
+            outline: none;
+            border-left: 2px solid #50575f;
+          }
+          & div {
+            & input {
+              width: 315px;
+              height: 60px;
+              background-color: #f2f2f2;
+              font-size: 16px;
+              font-style: italic;
+              color: #5f5f5f;
+              border: none;
+              padding: 2%;
+              margin: 1rem 1rem 1rem 0rem;
+              border: 1px solid rgba(0, 0, 0, 0.14);
+            }
+            & input:focus {
+              outline: none;
+              border-left: 2px solid #50575f;
+            }
+            & a {
+              display: inline-block;
+              width: 210px;
+              height: 60px;
+              text-decoration: none;
+              font-size: 17px;
+              color: #ffffff;
+              padding: 1.35rem 1rem;
+              background-color: #6995a9;
+              margin: 1rem 1rem 1rem 0rem;
+              text-align: center;
+              & object {
+                margin: 0rem 0.5rem;
+              }
+            }
+          }
+        }
+      }
     }
   }
 }

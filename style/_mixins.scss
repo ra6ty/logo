@@ -1,0 +1,28 @@
+@mixin backgroundImage {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@mixin text {
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 500;
+  color: #5a5a5a;
+  text-align: center;
+}
+
+@mixin h2 {
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #303030;
+  text-align: center;
+}
+
+@mixin line {
+  height: 3px;
+  background-color: #303030;
+  border: none;
+  margin: auto;
+}
