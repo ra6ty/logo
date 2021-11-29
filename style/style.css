@@ -17,20 +17,20 @@ header {
 
 header p {
   font-size: 25px;
-  font-weight: 400;
   color: #4c4c4c;
 }
 
-header div {
+header ul {
   width: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  list-style: none;
 }
 
-header div a {
+header ul a {
   text-decoration: none;
   font-size: 12px;
   color: #a7a7a7;
@@ -69,24 +69,24 @@ main .first-box p {
   margin-bottom: 5rem;
 }
 
-main .first-box-container {
-  margin: auto;
+main .first-box--container {
   width: 80px;
   height: 80px;
-  background-image: url(../images/1.2.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-image: url(../images/1.2.png);
+  margin: auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-main .first-box-container svg {
+main .first-box--container svg {
   margin: auto;
 }
 
-main .first-box-container svg :hover {
+main .first-box--container:hover path {
   fill: #87cefa;
 }
 
@@ -96,7 +96,6 @@ main .second-box {
 
 main .second-box h2 {
   font-size: 30px;
-  font-weight: 700;
   text-transform: uppercase;
   color: #303030;
   text-align: center;
@@ -121,16 +120,18 @@ main .second-box p {
   margin: 1rem auto 0rem auto;
 }
 
-main .second-box-container--part {
+main .second-box--container div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-main .second-box-container--part img {
+main .second-box--container div img {
   margin: 1.8rem;
 }
 
@@ -141,7 +142,6 @@ main .third-box {
 
 main .third-box h2 {
   font-size: 30px;
-  font-weight: 700;
   text-transform: uppercase;
   color: #303030;
   text-align: center;
@@ -217,7 +217,18 @@ main .third-box .box--container div {
 }
 
 main .third-box .box--container div a {
+  width: 25px;
+  height: 25px;
   margin: 1rem 1rem 0.3rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 main .fourth-box {
@@ -226,7 +237,6 @@ main .fourth-box {
 
 main .fourth-box h2 {
   font-size: 30px;
-  font-weight: 700;
   text-transform: uppercase;
   color: #303030;
   text-align: center;
@@ -251,11 +261,11 @@ main .fourth-box .box {
   padding: 1rem;
 }
 
-main .fourth-box .box--left-container {
+main .fourth-box .box--left_container {
   margin: 0rem 2rem;
 }
 
-main .fourth-box .box--left-container p {
+main .fourth-box .box--left_container p {
   padding: 1rem 0rem 1rem 0.5rem;
   font-size: 16px;
   line-height: 25px;
@@ -265,12 +275,12 @@ main .fourth-box .box--left-container p {
   text-align: start;
 }
 
-main .fourth-box .box--left-container img {
+main .fourth-box .box--left_container img {
   width: 320px;
   height: 315px;
 }
 
-main .fourth-box .box--rigth-container p {
+main .fourth-box .box--rigth_container p {
   font-size: 16px;
   line-height: 25px;
   font-weight: 500;
@@ -280,41 +290,39 @@ main .fourth-box .box--rigth-container p {
   padding: 1rem 0rem 1.5rem 0rem;
 }
 
-main .fourth-box .box--rigth-container form textarea {
+main .fourth-box .box--rigth_container form textarea {
   font-family: "Georgia", Times, serif;
   font-size: 16px;
   font-style: italic;
   color: #5f5f5f;
   background-color: #f2f2f2;
   padding: 1rem;
-  border: none;
   border: 1px solid rgba(0, 0, 0, 0.14);
 }
 
-main .fourth-box .box--rigth-container form textarea:focus {
+main .fourth-box .box--rigth_container form textarea:focus {
   outline: none;
-  border-left: 2px solid #50575f;
+  border-left: 2px solid #e5e5e5;
 }
 
-main .fourth-box .box--rigth-container form div input {
+main .fourth-box .box--rigth_container form div input {
   width: 315px;
   height: 60px;
   background-color: #f2f2f2;
   font-size: 16px;
   font-style: italic;
   color: #5f5f5f;
-  border: none;
   padding: 2%;
   margin: 1rem 1rem 1rem 0rem;
-  border: 1px solid rgba(0, 0, 0, 0.14);
+  border: 1px solid #e5e5e5;
 }
 
-main .fourth-box .box--rigth-container form div input:focus {
+main .fourth-box .box--rigth_container form div input:focus {
   outline: none;
   border-left: 2px solid #50575f;
 }
 
-main .fourth-box .box--rigth-container form div a {
+main .fourth-box .box--rigth_container form div button {
   display: inline-block;
   width: 210px;
   height: 60px;
@@ -327,11 +335,11 @@ main .fourth-box .box--rigth-container form div a {
   text-align: center;
 }
 
-main .fourth-box .box--rigth-container form div a object {
+main .fourth-box .box--rigth_container form div button object {
   margin: 0rem 0.5rem;
 }
 
-main .fourth-box .box--rigth-container form div a:hover {
+main .fourth-box .box--rigth_container form div button:hover {
   background-color: #476673;
 }
 
@@ -357,5 +365,9 @@ footer p {
 
 footer p span {
   color: #949494;
+}
+
+object {
+  pointer-events: none;
 }
 /*# sourceMappingURL=style.css.map */

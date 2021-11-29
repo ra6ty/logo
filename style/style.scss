@@ -12,10 +12,11 @@ header {
     font-size: 25px;
     color: #4c4c4c;
   }
-  & div {
+  & ul {
     width: 300px;
     display: flex;
     justify-content: space-around;
+    list-style: none;
     & a {
       text-decoration: none;
       font-size: 12px;
@@ -45,17 +46,17 @@ main {
       font-family: "Georgia", Times, serif;
       margin-bottom: 5rem;
     }
-    &-container {
-      margin: auto;
+    &--container {
       width: 80px;
       height: 80px;
-      background-image: url(../images/1.2.png);
-      @include backgroundImage;
       display: flex;
+      background-image: url(../images/1.2.png);
+      margin: auto;
+      @include backgroundImage;
       & svg {
         margin: auto;
       }
-      & svg :hover {
+      &:hover path {
         fill: #87cefa;
       }
     }
@@ -75,10 +76,11 @@ main {
       max-width: 600px;
       margin: 1rem auto 0rem auto;
     }
-    &-container {
-      &--part {
+    &--container {
+      & div {
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
         & img {
           margin: 1.8rem;
         }
@@ -133,7 +135,12 @@ main {
           justify-content: center;
           align-items: center;
           & a {
+            width: 25px;
+            height: 25px;
             margin: 1rem 1rem 0.3rem 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
           }
         }
       }
@@ -153,7 +160,7 @@ main {
       display: flex;
       justify-content: center;
       padding: 1rem;
-      &--left-container {
+      &--left_container {
         margin: 0rem 2rem;
         & p {
           padding: 1rem 0rem 1rem 0.5rem;
@@ -165,7 +172,7 @@ main {
           height: 315px;
         }
       }
-      &--rigth-container {
+      &--rigth_container {
         & p {
           @include text;
           text-align: start;
@@ -201,7 +208,7 @@ main {
               outline: none;
               border-left: 2px solid #50575f;
             }
-            & a {
+            & button {
               display: inline-block;
               width: 210px;
               height: 60px;
@@ -216,7 +223,7 @@ main {
                 margin: 0rem 0.5rem;
               }
             }
-            & a:hover {
+            & button:hover {
               background-color: #476673;
             }
           }
@@ -241,4 +248,8 @@ footer {
       color: #949494;
     }
   }
+}
+
+object {
+  pointer-events: none;
 }

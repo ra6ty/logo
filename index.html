@@ -19,11 +19,17 @@
 <body>
   <header>
     <p>LØGØ</p>
-    <div>
-      <a href="#">WORK</a>
-      <a href="#">TEAM</a>
-      <a href="#">CONTACT</a>
-    </div>
+    <ul>
+      <li>
+        <a href="#">WORK</a>
+      </li>
+      <li>
+        <a href="#">TEAM</a>
+      </li>
+      <li>
+        <a href="#">CONTACT</a>
+      </li>
+    </ul>
   </header>
   <main>
     <section class="first-box">
@@ -31,7 +37,7 @@
       <p>
         We specialize in crafting awesome ideas for web, mobile and beyond.
       </p>
-      <div class="first-box-container">
+      <div class="first-box--container">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="11px">
             <path
               fill-rule="evenodd"
@@ -47,18 +53,18 @@
       <p>
         Here you can find some of our latest works, to see the details of these works just click the thumbnails below.
       </p>
-      <div class="second-box-container">
-        <div class="second-box-container--part">
+      <div class="second-box--container">
+        <div>
           <img src="./images/2.1.png" alt="#" />
           <img src="./images/2.2.png" alt="#" />
           <img src="./images/2.3.png" alt="#" />
         </div>
-        <div class="second-box-container--part">
+        <div>
           <img src="./images/3.1.png" alt="#" />
           <img src="./images/3.2.png" alt="#" />
           <img src="./images/3.3.png" alt="#" />
         </div>
-        <div class="second-box-container--part">
+        <div>
           <img src="./images/4.1.png" alt="#" />
           <img src="./images/4.2.png" alt="#" />
           <img src="./images/4.3.png" alt="#" />
@@ -145,21 +151,18 @@
       <h2>contact</h2>
       <hr />
       <div class="box">
-        <div class="box--left-container">
+        <div class="box--left_container">
           <p>Where are we located?</p>
           <img src="./images/6.png" alt="#" />
         </div>
-        <div class="box--rigth-container">
+        <div class="box--rigth_container">
           <p>Want to contact us now? Just drop us a line below.</p>
           <form action="#" method="get">
             <textarea name="text" cols="61" rows="10" placeholder="Leave us a message..."></textarea>
             <div>
-              <input type="email" placeholder="Your email... " />
-              <a href="#"><object
-                    data="./images/comp.svg"
-                    type="image/svg+xml"
-                  ></object
-                  >SEND</a
+              <input type="email" placeholder="Your email..." />
+              <button type="submit"><object data="./images/comp.svg" type="image/svg+xml"></object
+                  >SEND</button
                 >
               </div>
             </form>
