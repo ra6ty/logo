@@ -1,255 +1,310 @@
-@import "mixins";
-* {
-  font-family: "Gothic A1", sans-serif;
-}
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 2rem 10rem;
-  & p {
-    font-size: 25px;
-    color: #4c4c4c;
-  }
-  & ul {
-    width: 300px;
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-    & a {
-      text-decoration: none;
-      font-size: 12px;
-      color: #a7a7a7;
+    @import "mixins";
+    * {
+      font-family: "Gothic A1", sans-serif;
     }
-  }
-}
-
-main {
-  width: 100%;
-  & .first-box {
-    background-image: url(../images/1.png);
-    @include backgroundImage;
-    padding: 7rem;
-    & h1 {
-      font-size: 40px;
-      font-weight: 900;
-      text-transform: uppercase;
-      color: #303030;
-      max-width: 400px;
-      text-align: center;
-      margin: 8rem auto 1rem auto;
+    
+    body {
+      max-width: 1600px;
+      margin: 0 auto;
     }
-    & p {
-      @include text;
-      font-style: italic;
-      font-family: "Georgia", Times, serif;
-      margin-bottom: 5rem;
-    }
-    &--container {
-      width: 80px;
-      height: 80px;
+    
+    header {
       display: flex;
-      background-image: url(../images/1.2.png);
-      margin: auto;
-      @include backgroundImage;
-      & svg {
-        margin: auto;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2rem 10rem;
+      & p {
+        font-size: 25px;
+        color: #4c4c4c;
       }
-      &:hover path {
-        fill: #87cefa;
-      }
-    }
-  }
-  & .second-box {
-    padding: 2rem;
-    & h2 {
-      @include h2;
-      margin: 1rem;
-    }
-    & hr {
-      @include line;
-      max-width: 240px;
-    }
-    & p {
-      @include text;
-      max-width: 600px;
-      margin: 1rem auto 0rem auto;
-    }
-    &--container {
-      & div {
+      & ul {
+        width: 300px;
         display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        & img {
-          margin: 1.8rem;
+        justify-content: space-around;
+        list-style: none;
+        & a {
+          text-decoration: none;
+          font-size: 12px;
+          color: #a7a7a7;
         }
       }
     }
-  }
-  & .third-box {
-    padding: 2rem 2rem 4rem 2rem;
-    background-color: #f3f3f3;
-    & h2 {
-      @include h2;
-      margin: 1rem;
-    }
-    & hr {
-      @include line;
-      max-width: 180px;
-    }
-    & p {
-      @include text;
-      max-width: 600px;
-      margin: 2rem auto 3rem auto;
-    }
-    & .box {
-      display: flex;
-      justify-content: center;
-      &--container {
-        background-color: #ffffff;
-        padding: 2rem;
-        margin: 1rem;
-        & img {
-          display: block;
-          margin: auto;
-        }
-        & h3 {
-          font-size: 16px;
+    
+    main {
+      width: 100%;
+      & .first-box {
+        background-image: url(../images/1.png);
+        @include backgroundImage;
+        padding: 7rem;
+        & h1 {
+          font-size: 40px;
           font-weight: 900;
           text-transform: uppercase;
           color: #303030;
+          max-width: 400px;
           text-align: center;
-          margin: 1rem auto 0rem auto;
+          margin: 8rem auto 1rem auto;
         }
         & p {
-          font-family: "Georgia", Times, serif;
-          font-size: 12px;
-          font-weight: 400;
+          @include text;
           font-style: italic;
-          color: #303030;
-          margin: auto;
+          font-family: "Georgia", Times, serif;
+          margin-bottom: 5rem;
         }
-        & div {
+        &--container {
+          width: 80px;
+          height: 80px;
           display: flex;
-          justify-content: center;
-          align-items: center;
-          & a {
-            width: 25px;
-            height: 25px;
-            margin: 1rem 1rem 0.3rem 1rem;
+          background-image: url(../images/1.2.png);
+          margin: auto;
+          @include backgroundImage;
+          & svg {
+            margin: auto;
+          }
+          &:hover path {
+            fill: #87cefa;
+          }
+        }
+      }
+      & .second-box {
+        padding: 2rem;
+        & h2 {
+          @include h2;
+          margin: 1rem;
+        }
+        & hr {
+          @include line;
+          max-width: 240px;
+        }
+        & p {
+          @include text;
+          max-width: 600px;
+          margin: 1rem auto 0rem auto;
+        }
+        &--container {
+          & div {
             display: flex;
             justify-content: center;
-            align-items: center;
+            flex-wrap: wrap;
+            & img {
+              margin: 1.8rem;
+            }
+          }
+        }
+      }
+      & .third-box {
+        padding: 2rem 2rem 4rem 2rem;
+        background-color: #f3f3f3;
+        & h2 {
+          @include h2;
+          margin: 1rem;
+        }
+        & hr {
+          @include line;
+          max-width: 180px;
+        }
+        & p {
+          @include text;
+          max-width: 600px;
+          margin: 2rem auto 3rem auto;
+        }
+        & .box {
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          &--container {
+            background-color: #ffffff;
+            padding: 2rem;
+            margin: 1rem;
+            & img {
+              display: block;
+              margin: auto;
+            }
+            & h3 {
+              font-size: 16px;
+              font-weight: 900;
+              text-transform: uppercase;
+              color: #303030;
+              text-align: center;
+              margin: 1rem auto 0rem auto;
+            }
+            & p {
+              font-family: "Georgia", Times, serif;
+              font-size: 12px;
+              font-weight: 400;
+              font-style: italic;
+              color: #303030;
+              margin: auto;
+            }
+            & div {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              & a {
+                width: 25px;
+                height: 25px;
+                margin: 1rem 1rem 0.3rem 1rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              }
+            }
+          }
+        }
+      }
+      & .fourth-box {
+        padding: 2rem 2rem 4rem 2rem;
+        & h2 {
+          @include h2;
+          margin: 1rem;
+        }
+        & hr {
+          @include line;
+          max-width: 180px;
+        }
+        & .box {
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          padding: 1rem;
+          &--left_container {
+            margin: 0rem 2rem;
+            & p {
+              padding: 1rem 0rem 1rem 0.5rem;
+              @include text;
+              text-align: start;
+            }
+            & img {
+              max-width: 320px;
+              max-height: 315px;
+            }
+          }
+          &--rigth_container {
+            & p {
+              @include text;
+              text-align: start;
+              padding: 1rem 0rem 1.5rem 0rem;
+              max-width: 400px;
+            }
+            & form {
+              & textarea {
+                font-family: "Georgia", Times, serif;
+                font-size: 16px;
+                font-style: italic;
+                color: #5f5f5f;
+                background-color: #f2f2f2;
+                padding: 1rem;
+                border: 1px solid rgba(0, 0, 0, 0.14);
+              }
+              textarea:focus {
+                outline: none;
+                border-left: 2px solid #e5e5e5;
+              }
+              & div {
+                & input {
+                  width: 315px;
+                  height: 60px;
+                  background-color: #f2f2f2;
+                  font-size: 16px;
+                  font-style: italic;
+                  color: #5f5f5f;
+                  padding: 2%;
+                  margin: 1rem 1rem 1rem 0rem;
+                  border: 1px solid #e5e5e5;
+                }
+                & input:focus {
+                  outline: none;
+                  border-left: 2px solid #50575f;
+                }
+                & button {
+                  display: inline-block;
+                  width: 210px;
+                  height: 60px;
+                  text-decoration: none;
+                  font-size: 17px;
+                  color: #ffffff;
+                  padding: 1.35rem 1rem;
+                  background-color: #6995a9;
+                  margin: 1rem 1rem 1rem 0rem;
+                  text-align: center;
+                  & object {
+                    margin: 0rem 0.5rem;
+                  }
+                }
+                & button:hover {
+                  background-color: #476673;
+                }
+              }
+            }
           }
         }
       }
     }
-  }
-  & .fourth-box {
-    padding: 2rem 2rem 4rem 2rem;
-    & h2 {
-      @include h2;
-      margin: 1rem;
-    }
-    & hr {
-      @include line;
-      max-width: 180px;
-    }
-    & .box {
+    
+    footer {
+      background-color: #4f4f4f;
       display: flex;
-      justify-content: center;
-      padding: 1rem;
-      &--left_container {
-        margin: 0rem 2rem;
-        & p {
-          padding: 1rem 0rem 1rem 0.5rem;
-          @include text;
-          text-align: start;
-        }
-        & img {
-          width: 320px;
-          height: 315px;
+      align-items: center;
+      justify-content: space-around;
+      padding: 2rem 1rem;
+      & p {
+        font-size: 16px;
+        line-height: 25px;
+        font-weight: 400;
+        color: #6e6e6e;
+        & span {
+          color: #949494;
         }
       }
-      &--rigth_container {
+    }
+    
+    object {
+      pointer-events: none;
+    }
+    
+    @media (max-width: 479px) {
+      header {
+        padding: 1rem;
+        justify-content: space-evenly;
+        & ul {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-evenly;
+        }
+      }
+      .first-box {
+        padding: 2rem !important;
+      }
+      .box--rigth_container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
         & p {
-          @include text;
-          text-align: start;
-          padding: 1rem 0rem 1.5rem 0rem;
+          max-width: 90%;
         }
         & form {
           & textarea {
-            font-family: "Georgia", Times, serif;
-            font-size: 16px;
-            font-style: italic;
-            color: #5f5f5f;
-            background-color: #f2f2f2;
-            padding: 1rem;
-            border: 1px solid rgba(0, 0, 0, 0.14);
-          }
-          textarea:focus {
-            outline: none;
-            border-left: 2px solid #e5e5e5;
+            max-width: 300px;
           }
           & div {
+            max-width: 300px;
             & input {
-              width: 315px;
-              height: 60px;
-              background-color: #f2f2f2;
-              font-size: 16px;
-              font-style: italic;
-              color: #5f5f5f;
-              padding: 2%;
-              margin: 1rem 1rem 1rem 0rem;
-              border: 1px solid #e5e5e5;
-            }
-            & input:focus {
-              outline: none;
-              border-left: 2px solid #50575f;
+              max-width: 300px;
+              margin: 1rem 0 !important;
             }
             & button {
-              display: inline-block;
-              width: 210px;
-              height: 60px;
-              text-decoration: none;
-              font-size: 17px;
-              color: #ffffff;
-              padding: 1.35rem 1rem;
-              background-color: #6995a9;
-              margin: 1rem 1rem 1rem 0rem;
-              text-align: center;
-              & object {
-                margin: 0rem 0.5rem;
-              }
-            }
-            & button:hover {
-              background-color: #476673;
+              display: block !important;
+              margin: 0 auto !important;
             }
           }
         }
       }
+      footer {
+        display: flex;
+        flex-direction: column;
+        & p {
+          margin-bottom: .1rem;
+        }
+      }
     }
-  }
-}
-
-footer {
-  background-color: #4f4f4f;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  padding: 2rem 1rem;
-  & p {
-    font-size: 16px;
-    line-height: 25px;
-    font-weight: 400;
-    color: #6e6e6e;
-    & span {
-      color: #949494;
-    }
-  }
-}
-
-object {
-  pointer-events: none;
-}

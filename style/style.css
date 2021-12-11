@@ -2,6 +2,11 @@
   font-family: "Gothic A1", sans-serif;
 }
 
+body {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -173,6 +178,8 @@ main .third-box .box {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 main .third-box .box--container {
@@ -258,6 +265,8 @@ main .fourth-box .box {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding: 1rem;
 }
 
@@ -276,8 +285,8 @@ main .fourth-box .box--left_container p {
 }
 
 main .fourth-box .box--left_container img {
-  width: 320px;
-  height: 315px;
+  max-width: 320px;
+  max-height: 315px;
 }
 
 main .fourth-box .box--rigth_container p {
@@ -288,6 +297,7 @@ main .fourth-box .box--rigth_container p {
   text-align: center;
   text-align: start;
   padding: 1rem 0rem 1.5rem 0rem;
+  max-width: 400px;
 }
 
 main .fourth-box .box--rigth_container form textarea {
@@ -369,5 +379,67 @@ footer p span {
 
 object {
   pointer-events: none;
+}
+
+@media (max-width: 479px) {
+  header {
+    padding: 1rem;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  header ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .first-box {
+    padding: 2rem !important;
+  }
+  .box--rigth_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
+  .box--rigth_container p {
+    max-width: 90%;
+  }
+  .box--rigth_container form textarea {
+    max-width: 300px;
+  }
+  .box--rigth_container form div {
+    max-width: 300px;
+  }
+  .box--rigth_container form div input {
+    max-width: 300px;
+    margin: 1rem 0 !important;
+  }
+  .box--rigth_container form div button {
+    display: block !important;
+    margin: 0 auto !important;
+  }
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer p {
+    margin-bottom: .1rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
