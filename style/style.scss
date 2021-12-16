@@ -116,6 +116,7 @@
             background-color: #ffffff;
             padding: 2rem;
             margin: 1rem;
+            width: 200px;
             & img {
               display: block;
               margin: auto;
@@ -262,10 +263,11 @@
       pointer-events: none;
     }
     
-    @media (max-width: 479px) {
+    @media (max-width: 666px) {
       header {
         padding: 1rem;
         justify-content: space-evenly;
+        flex-wrap: wrap;
         & ul {
           display: flex;
           flex-wrap: wrap;

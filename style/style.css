@@ -186,6 +186,7 @@ main .third-box .box--container {
   background-color: #ffffff;
   padding: 2rem;
   margin: 1rem;
+  width: 200px;
 }
 
 main .third-box .box--container img {
@@ -381,12 +382,14 @@ object {
   pointer-events: none;
 }
 
-@media (max-width: 479px) {
+@media (max-width: 666px) {
   header {
     padding: 1rem;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   header ul {
     display: -webkit-box;
